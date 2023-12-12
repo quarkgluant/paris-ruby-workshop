@@ -144,6 +144,14 @@ $on-laptop:        800px;
   padding-left: 0.8em;
 }
 
+.katas-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+}
+
 .katas {
   max-width: 740px;
   padding: 2em 1em;
