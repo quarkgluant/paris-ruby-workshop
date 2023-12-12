@@ -1,0 +1,168 @@
+---
+---
+
+@charset "utf-8";
+@import "minima";
+
+// Our variables
+$base-font-family:          Helvetica, Arial, sans-serif;
+$base-font-size:            16px;
+$small-font-size:           $base-font-size * 0.875;
+$base-line-height:          1.5;
+
+$spacing-unit:              30px;
+
+$main-color:                #EF233C;
+$slightly-lighter-main:     #F0374D;
+$lighter-main-color:        #F14B5F;
+$lighter-and-a-half-main:   #F35F71;
+$double-lighter-main-color: #F47382;
+$alt-white:                 #EDF2F4;
+$secondary-color:           #8D99AE;
+$dark-color:                #2B2D42;
+
+//$text-color:       #111;
+$background-color: $main-color;
+//$brand-color:      #2a7ae2;
+
+$white-color:      #fff;
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+:root {
+  //$main-color: #EF233C;
+  //$slightly-lighter-main: #F0374D;
+  //$lighter-main-color: #F14B5F;
+  //$lighter-and-a-half-main: #F35F71;
+  //$double-lighter-main-color: #F47382;
+  //$alt-white: #EDF2F4;
+  //$secondary-color: #8D99AE;
+  //$dark-color: #2B2D42;
+}
+
+.hero {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 24em;
+  display: flex;
+  flex-direction: column;
+  background:
+          linear-gradient(
+                          rgba(255, 255, 255, 0.50),
+                          rgba(255, 255, 255, 0.50)
+          ),
+          url("../assets/photo-workshop.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  text-align: left;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.logoimg {
+  height: 100px;
+  width: 100px;
+  padding-right: 20px;
+}
+
+.description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.descriptionBlock {
+  padding: 2em;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+@media (min-width: 800px) {
+  .descriptionBlock {
+    flex-grow: 1;
+    flex-basis: 33%;
+  }
+}
+
+.katas {
+  width: 100%;
+  background-color: #EDF2F4;
+  display: flex;
+  justify-content: center;
+}
+.guidelines {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bottomTag {
+  width: 100%;
+  background-color: #EDF2F4;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  color: white;
+  border-radius: 3px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  background: linear-gradient(to bottom, $lighter-main-color, $main-color);
+}
+.button:hover {
+  color: white;
+  background: linear-gradient(to bottom, $lighter-and-a-half-main, $slightly-lighter-main);
+}
+
+.topbar {
+  color: white;
+  background-color: $main-color;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 3em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topbar a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  padding-left: 0.8em;
+}
+
+.katas {
+  max-width: 740px;
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.level {
+  color: purple;
+}
+.beginner {
+  color: green;
+}
+.intermediate {
+  color: orange;
+}
+.expert {
+  color: red;
+}
+@import "code_of_conduct",
+"contributing",
+"guidelines";

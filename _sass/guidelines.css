@@ -1,0 +1,11 @@
+.guidelines {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 740px;
+  padding: 2em 1em;
+}
+
+ul .guidelines {
+  padding-top: 2em;
+}
