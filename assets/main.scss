@@ -142,35 +142,29 @@ $on-laptop:        800px;
   cursor: pointer;
   color: white;
   padding-left: 0.8em;
+  margin-right: 1em;
 }
 
-.katas-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2em;
+.topbar a:visited {
+  color: gray;
 }
 
-.katas {
-  max-width: 740px;
-  padding: 2em 1em;
-  display: flex;
-  flex-direction: column;
+.site-title {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-left: 0.8em;
 }
 
-.level {
-  color: purple;
+.site-nav .page-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
 }
-.beginner {
-  color: green;
-}
-.intermediate {
-  color: orange;
-}
-.expert {
-  color: red;
-}
+
+
 @import "code_of_conduct",
 "contributing",
-"guidelines";
+"guidelines",
+"kata";

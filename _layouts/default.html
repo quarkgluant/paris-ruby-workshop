@@ -36,13 +36,13 @@
 </div>
 <div class="katas-list">
     <div class="katas">
-        <h2>Les katas</h2>
+        <h2><strong>KATAS</strong></h2>
         <ul>
             {% for kata in site.data.katas %}
-            <li>
-                <p class="{{ kata.level }}">Niveau: {{ kata.level }}</p>
-                <p>Nom : {{ kata.name }}</p>
-                <p>Description sommaire : {{ kata.description }}</p>
+            <li class="elem-kata">
+                <p class="level {{ kata.level }}">Niveau: {{ kata.level }}</p>
+                <p class="name-kata">{{ kata.name }}</p>
+                <p class="description-kata">{{ kata.description }}</p>
                 <a href="https://github.com/{{ kata.repo }}">
                     Le lien vers le repo GitHub
                 </a>
@@ -51,6 +51,7 @@
         </ul>
     </div>
 </div>
+
 <div class="katas-list">
     <div class="guidelines">
     <h1>Mode d'emploi</h1>

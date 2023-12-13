@@ -1,8 +1,53 @@
-/*.katas {*/
-/*  max-width: 740px;*/
-/*  padding: 2em 1em;*/
-/*}*/
+.katas-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
 
-/*.kata_list {*/
-/*  padding-top: 2em;*/
-/*}*/
+.katas {
+    max-width: 740px;
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.elem-kata {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+    margin: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.name-kata {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.description-kata {
+    font-size: 1em;
+    font-weight: lighter;
+    margin: 1px 0;
+}
+
+.level {
+    margin-bottom: 2px;
+}
+.beginner {
+    color: green;
+}
+.intermediate {
+    color: orange;
+}
+.expert {
+    color: red;
+}
